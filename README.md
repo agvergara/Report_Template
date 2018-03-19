@@ -1,6 +1,6 @@
 # Report Template
 
-LaTeX template for college reports.
+LaTeX template for college reports. Currently for Universidad Rey Juan Carlos reports, you may want to change the logo to match your uni.
 
 Feel free to contact any upgrades! :)
 
