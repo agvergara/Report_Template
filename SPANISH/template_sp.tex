@@ -1,0 +1,65 @@
+\documentclass[a4paper, 12pt]{book}
+%\usepackage[T1]{fontenc}
+
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{times}
+\usepackage{afterpage}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel} % Comenta esta línea si tu memoria es en inglés
+\usepackage{url}
+%\usepackage[dvipdfm]{graphicx}
+\usepackage{graphicx}
+\usepackage{float}  %% H para posicionar figuras
+\usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de índice
+\usepackage[none]{hyphenat}
+\usepackage{cite}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = blue]{hyperref}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\includegraphics[scale=0.5]{img/logo_urjc.jpg}
+		\vspace{3cm}
+		
+		\Large
+		TITULACIÓN(ES)
+		
+		\vspace{0.4cm}
+		
+		\large
+		Curso Académico 201X/201Y
+		
+		\vspace{0.8cm}
+		
+		Práctica Z
+		
+		\vspace{2.5cm}		
+		\LARGE		
+		
+		TÍTULO DEL INFORME (EN MAYÚSCULAS)
+
+		\vspace{2.5 cm}
+		
+		\large
+		Autores del informe aquí.
+		\afterpage{\null\newpage}
+		\pagestyle{empty}
+	\end{titlepage}
+	
+	\tableofcontents
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\mainmatter
+	
+	\input{introduccion}
+	\input{marco_teorico}
+	\input{estado_del_arte}
+	\input{montaje}
+	\input{analisis_resultados}
+	\input{conclusion}
+	
+	\bibliographystyle{unsrt}
+	\bibliography{template_sp}
+	
+	
+\end{document}
